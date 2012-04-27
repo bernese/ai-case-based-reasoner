@@ -1,0 +1,1370 @@
+ general case
+   Attributes: None
+   Actions: None
+   Action Prescribe: None
+   Actions Done: None
+    general case
+      Attributes: {'maintainProgram': ['firewall'], 'os': ['mac']}
+      Actions: {"os-['linux']": ['notStartup']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       general case
+         Attributes: {'program': ['other']}
+         Actions: {"os-['linux']": ['notStartup']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['storage'], 'program': ['other']}
+            Actions: {"maintainProgram-['defragger']": ['freezes'], "os-['linux']": ['notStartup']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['removableStorage', 'processor'], 'maintainProgram': ['firewall'], 'program': ['other'], 'os': ['mac', 'unix']}
+            Actions: {"os-['linux']": ['notStartup']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {"os-['mac']": ['power'], "hardware-['storage']": ['power'], "maintainProgram-['antivirus']": ['other']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {"os-['unix']": ['power']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {"program-['wordProcessor']": ['other']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {"program-['wordProcessor']": ['crashes'], "os-['other']": ['notStartup'], "program-['game']": ['failsTask']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: None
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {"hardware-['other']": ['notVisible']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: None
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: None
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: None
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {"os-['other']": ['noise']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+       general case
+         Attributes: None
+         Actions: {"os-['linux']": ['notStartup']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: None
+            Actions: {"os-['linux']": ['notStartup']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['ram', 'storage'], 'maintainProgram': ['firewall', 'antivirus'], 'program': ['music', 'internet'], 'os': ['mac', 'other']}
+            Actions: {"os-['linux']": ['notStartup'], "os-['other']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['processor', 'storage'], 'maintainProgram': ['antivirus'], 'program': ['music', 'wordProcessor'], 'os': ['other']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: None
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"hardware-['ram']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: None
+         Actions: {"program-['game']": ['notSave'], "hardware-['ram']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['other'], 'maintainProgram': ['defragger', 'antivirus'], 'program': ['music'], 'os': ['unix']}
+         Actions: {"os-['windows']": ['noise'], "hardware-['ram']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['processor'], 'maintainProgram': ['other', 'firewall'], 'program': ['music'], 'os': ['linux']}
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['other'], 'maintainProgram': ['firewall'], 'program': ['wordProcessor'], 'os': ['windows', 'other']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['storage', 'removableStorage'], 'maintainProgram': ['other', 'firewall'], 'program': ['game'], 'os': ['unix', 'mac', 'other']}
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"program-['other']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['ram'], 'maintainProgram': ['other'], 'program': ['other']}
+         Actions: {"program-['other']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: None
+         Actions: {"program-['other']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'program': ['internet'], 'os': ['unix']}
+            Actions: {"program-['other']": ['other'], "maintainProgram-['firewall']": ['notSave']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {"program-['other']": ['other']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['antivirus'], 'program': ['other', 'wordProcessor'], 'os': ['mac', 'unix', 'windows']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: None
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: None
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"os-['mac']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: None
+         Actions: {"os-['mac']": ['other', 'failure'], "program-['music']": ['failsTask']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: {'maintainProgram': ['firewall'], 'os': ['windows']}
+         Actions: {"os-['mac']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['storage'], 'maintainProgram': ['firewall'], 'program': ['wordProcessor'], 'os': ['windows']}
+            Actions: {"os-['mac']": ['other'], "program-['other']": ['freezes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          general case
+            Attributes: {'hardware': ['processor'], 'os': ['mac', 'windows']}
+            Actions: {"os-['mac']": ['other']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+             case
+               Attributes: {'hardware': ['processor', 'storage'], 'maintainProgram': ['other', 'antivirus'], 'program': ['internet'], 'os': ['mac', 'windows']}
+               Actions: {"os-['mac']": ['other'], "program-['other']": ['failsTask']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+             case
+               Attributes: {'hardware': ['processor'], 'maintainProgram': ['firewall', 'defragger'], 'program': ['game'], 'os': ['linux', 'mac', 'windows']}
+               Actions: {"os-['mac']": ['other'], "os-['linux']": ['power']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+    case
+      Attributes: {'hardware': ['other', 'storage'], 'maintainProgram': ['antivirus', 'defragger'], 'program': ['game', 'wordProcessor'], 'os': ['linux']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['ram'], 'maintainProgram': ['antivirus', 'firewall'], 'os': ['windows', 'linux']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['other', 'removableStorage'], 'maintainProgram': ['antivirus', 'defragger'], 'program': ['internet', 'movie', 'other'], 'os': ['unix']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['antivirus'], 'program': ['game'], 'os': ['unix']}
+      Actions: {"hardware-['processor']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'program': ['wordProcessor'], 'os': ['unix']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'program': ['internet'], 'os': ['windows']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['storage', 'ram'], 'maintainProgram': ['firewall', 'antivirus'], 'program': ['music', 'movie'], 'os': ['mac', 'windows']}
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['storage'], 'maintainProgram': ['defragger'], 'program': ['internet', 'movie'], 'os': ['linux', 'unix']}
+      Actions: {"program-['other']": ['freezes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"hardware-['other']": ['notStartup']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: None
+         Actions: {"hardware-['other']": ['notStartup'], "hardware-['storage']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['ram'], 'maintainProgram': ['defragger', 'other', 'antivirus'], 'program': ['wordProcessor', 'movie'], 'os': ['unix', 'windows', 'linux']}
+         Actions: {"hardware-['other']": ['notStartup']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    general case
+      Attributes: {'hardware': ['removableStorage'], 'program': ['wordProcessor']}
+      Actions: {"hardware-['storage']": ['notVisible']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['firewall'], 'program': ['wordProcessor']}
+         Actions: {"hardware-['storage']": ['notVisible'], "maintainProgram-['antivirus']": ['crashes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: {'hardware': ['removableStorage', 'processor'], 'os': ['linux']}
+         Actions: {"hardware-['storage']": ['notVisible']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['removableStorage', 'processor'], 'maintainProgram': ['other'], 'program': ['internet', 'game'], 'os': ['other', 'linux']}
+            Actions: {"os-['linux']": ['notVisible'], "hardware-['storage']": ['notVisible']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['processor', 'other', 'removableStorage'], 'maintainProgram': ['antivirus', 'defragger'], 'program': ['wordProcessor', 'music'], 'os': ['mac', 'windows', 'linux']}
+            Actions: {"hardware-['storage']": ['notVisible'], "hardware-['processor']": ['notVisible']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"maintainProgram-['antivirus']": ['notStart']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: None
+         Actions: {"program-['other']": ['crashes'], "maintainProgram-['antivirus']": ['notStart']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: None
+         Actions: {"maintainProgram-['antivirus']": ['notStart']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: None
+            Actions: {"maintainProgram-['antivirus']": ['notStart'], "hardware-['storage']": ['noise']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['removableStorage', 'storage'], 'maintainProgram': ['other', 'defragger'], 'program': ['music', 'other'], 'os': ['windows', 'other']}
+            Actions: {"maintainProgram-['antivirus']": ['notStart'], "hardware-['storage']": ['power']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['other'], 'maintainProgram': ['firewall', 'other'], 'program': ['other', 'wordProcessor', 'music'], 'os': ['unix', 'windows']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: None
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['other', 'storage', 'removableStorage'], 'maintainProgram': ['defragger', 'firewall'], 'program': ['other', 'movie'], 'os': ['linux']}
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: None
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['other', 'storage'], 'maintainProgram': ['antivirus', 'defragger'], 'program': ['internet', 'other', 'movie'], 'os': ['mac', 'unix']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'hardware': ['removableStorage']}
+      Actions: {"program-['internet']": ['freezes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['processor', 'removableStorage'], 'maintainProgram': ['other'], 'program': ['wordProcessor'], 'os': ['linux']}
+         Actions: {"program-['internet']": ['freezes'], "program-['game']": ['crashes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['removableStorage'], 'program': ['other'], 'os': ['unix']}
+         Actions: {"program-['internet']": ['freezes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['storage', 'other'], 'maintainProgram': ['firewall', 'antivirus'], 'program': ['music', 'wordProcessor'], 'os': ['windows']}
+      Actions: {"maintainProgram-['other']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'hardware': ['processor'], 'os': ['mac']}
+      Actions: {"maintainProgram-['other']": ['freezes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['processor'], 'program': ['game'], 'os': ['mac']}
+         Actions: {"maintainProgram-['other']": ['freezes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: None
+         Actions: {"maintainProgram-['other']": ['freezes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['storage'], 'maintainProgram': ['defragger'], 'program': ['movie'], 'os': ['other']}
+            Actions: {"maintainProgram-['defragger']": ['freezes'], "os-['windows']": ['failure'], "maintainProgram-['other']": ['freezes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['processor'], 'maintainProgram': ['other'], 'program': ['internet'], 'os': ['mac']}
+            Actions: {"program-['other']": ['notSave'], "maintainProgram-['other']": ['freezes'], "os-['other']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    general case
+      Attributes: {'hardware': ['other']}
+      Actions: {"maintainProgram-['firewall']": ['crashes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       general case
+         Attributes: {'maintainProgram': ['other'], 'program': ['game'], 'os': ['windows', 'other']}
+         Actions: {"maintainProgram-['firewall']": ['crashes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['other', 'removableStorage'], 'maintainProgram': ['firewall', 'other'], 'program': ['game', 'wordProcessor'], 'os': ['unix', 'other', 'windows']}
+            Actions: {"maintainProgram-['defragger']": ['notSave'], "maintainProgram-['firewall']": ['crashes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          general case
+            Attributes: {'program': ['game']}
+            Actions: {"maintainProgram-['firewall']": ['crashes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+             case
+               Attributes: {'hardware': ['ram'], 'program': ['game'], 'os': ['linux']}
+               Actions: {"maintainProgram-['firewall']": ['crashes'], "os-['unix']": ['notStartup'], "os-['other']": ['failure']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+             case
+               Attributes: {'maintainProgram': ['other'], 'program': ['game', 'internet'], 'os': ['windows', 'other']}
+               Actions: {"maintainProgram-['firewall']": ['crashes']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+       general case
+         Attributes: {'program': ['internet']}
+         Actions: {"maintainProgram-['firewall']": ['crashes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['ram', 'processor'], 'maintainProgram': ['antivirus', 'other'], 'program': ['internet', 'wordProcessor'], 'os': ['other', 'mac']}
+            Actions: {"maintainProgram-['firewall']": ['crashes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['other'], 'program': ['internet'], 'os': ['linux']}
+            Actions: {"maintainProgram-['firewall']": ['crashes'], "program-['other']": ['crashes'], "program-['movie']": ['crashes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['ram', 'storage'], 'program': ['internet', 'game']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'program': ['wordProcessor']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"maintainProgram-['antivirus']": ['freezes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['firewall'], 'program': ['other'], 'os': ['other']}
+         Actions: {"maintainProgram-['antivirus']": ['freezes'], "hardware-['storage']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: None
+         Actions: {"maintainProgram-['antivirus']": ['freezes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: None
+            Actions: {"program-['movie']": ['freezes'], "maintainProgram-['antivirus']": ['freezes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: None
+            Actions: {"program-['internet']": ['notStart'], "maintainProgram-['antivirus']": ['freezes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['other'], 'maintainProgram': ['antivirus'], 'program': ['movie'], 'os': ['windows']}
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['antivirus'], 'program': ['music'], 'os': ['other']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage', 'ram'], 'maintainProgram': ['other', 'antivirus'], 'program': ['music', 'game'], 'os': ['linux', 'other', 'mac']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['ram'], 'maintainProgram': ['other'], 'program': ['wordProcessor'], 'os': ['windows']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage', 'ram'], 'maintainProgram': ['antivirus'], 'program': ['music'], 'os': ['mac', 'unix']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"os-['unix']": ['notVisible']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['storage'], 'maintainProgram': ['defragger'], 'program': ['wordProcessor', 'music'], 'os': ['linux', 'windows']}
+         Actions: {"os-['unix']": ['notVisible']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: None
+         Actions: {"os-['unix']": ['notVisible'], "program-['wordProcessor']": ['crashes'], "program-['movie']": ['crashes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    general case
+      Attributes: {'hardware': ['other'], 'program': ['music']}
+      Actions: {"maintainProgram-['firewall']": ['failsTask']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       general case
+         Attributes: {'hardware': ['other'], 'maintainProgram': ['other'], 'os': ['other']}
+         Actions: {"maintainProgram-['firewall']": ['failsTask']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          general case
+            Attributes: {'hardware': ['other'], 'program': ['movie'], 'os': ['windows']}
+            Actions: {"maintainProgram-['firewall']": ['failsTask']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+             case
+               Attributes: {'hardware': ['ram', 'other'], 'maintainProgram': ['defragger'], 'program': ['movie', 'internet'], 'os': ['windows']}
+               Actions: {"os-['windows']": ['notStartup'], "maintainProgram-['firewall']": ['failsTask']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+             case
+               Attributes: {'hardware': ['other', 'processor'], 'maintainProgram': ['other', 'firewall'], 'program': ['movie'], 'os': ['windows', 'other']}
+               Actions: {"maintainProgram-['firewall']": ['failsTask']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+          general case
+            Attributes: {'hardware': ['other'], 'program': ['music']}
+            Actions: {"maintainProgram-['firewall']": ['failsTask']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+             case
+               Attributes: {'hardware': ['other'], 'maintainProgram': ['antivirus'], 'program': ['music']}
+               Actions: {"os-['unix']": ['power'], "maintainProgram-['firewall']": ['failsTask']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+             case
+               Attributes: {'hardware': ['other', 'storage', 'ram'], 'maintainProgram': ['other', 'defragger'], 'program': ['internet', 'music'], 'os': ['other', 'unix']}
+               Actions: {"os-['windows']": ['power'], "maintainProgram-['firewall']": ['failsTask'], "hardware-['processor']": ['failure']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+       general case
+         Attributes: {'program': ['wordProcessor']}
+         Actions: {"maintainProgram-['firewall']": ['failsTask']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['processor', 'ram'], 'maintainProgram': ['firewall', 'other'], 'program': ['game', 'internet', 'wordProcessor'], 'os': ['windows', 'unix', 'other']}
+            Actions: {"maintainProgram-['firewall']": ['failsTask']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['other', 'removableStorage'], 'maintainProgram': ['antivirus'], 'program': ['music', 'wordProcessor']}
+            Actions: {"os-['windows']": ['other'], "maintainProgram-['firewall']": ['failsTask']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"os-['other']": ['failure']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['other'], 'program': ['wordProcessor']}
+         Actions: {"os-['other']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: {'maintainProgram': ['antivirus'], 'program': ['movie'], 'os': ['windows']}
+         Actions: {"os-['other']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['processor', 'storage'], 'maintainProgram': ['antivirus', 'defragger'], 'program': ['other', 'movie'], 'os': ['unix', 'linux', 'windows']}
+            Actions: {"hardware-['other']": ['power'], "os-['other']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'maintainProgram': ['antivirus'], 'program': ['movie'], 'os': ['windows']}
+            Actions: {"hardware-['removableStorage']": ['notVisible'], "os-['other']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: None
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['processor'], 'maintainProgram': ['other'], 'program': ['game'], 'os': ['other']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'maintainProgram': ['other']}
+      Actions: {"os-['linux']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['processor'], 'maintainProgram': ['other'], 'program': ['game'], 'os': ['linux']}
+         Actions: {"os-['linux']": ['other'], "maintainProgram-['other']": ['crashes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['other'], 'program': ['wordProcessor']}
+         Actions: {"os-['linux']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['other', 'removableStorage'], 'maintainProgram': ['other', 'firewall'], 'program': ['game', 'wordProcessor'], 'os': ['other']}
+            Actions: {"os-['linux']": ['other'], "program-['movie']": ['notStart'], "program-['music']": ['crashes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['other'], 'program': ['wordProcessor'], 'os': ['windows']}
+            Actions: {"os-['linux']": ['other'], "hardware-['storage']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"maintainProgram-['antivirus']": ['crashes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'os': ['unix']}
+         Actions: {"program-['music']": ['crashes'], "maintainProgram-['antivirus']": ['crashes'], "hardware-['other']": ['power']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'maintainProgram': ['other'], 'program': ['wordProcessor'], 'os': ['linux']}
+         Actions: {"os-['mac']": ['noise'], "hardware-['other']": ['failure'], "maintainProgram-['antivirus']": ['crashes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['ram'], 'maintainProgram': ['defragger'], 'program': ['wordProcessor'], 'os': ['other']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['storage'], 'program': ['game', 'wordProcessor'], 'os': ['linux']}
+      Actions: {"os-['mac']": ['noise'], "program-['movie']": ['freezes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'os': ['windows']}
+      Actions: {"os-['linux']": ['notVisible']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['ram'], 'program': ['game'], 'os': ['windows']}
+         Actions: {"os-['linux']": ['notVisible']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: {'maintainProgram': ['firewall'], 'os': ['windows']}
+         Actions: {"os-['linux']": ['notVisible']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['other', 'removableStorage'], 'maintainProgram': ['firewall', 'other'], 'program': ['internet'], 'os': ['unix', 'linux', 'windows']}
+            Actions: {"os-['linux']": ['notVisible'], "hardware-['other']": ['notStartup'], "maintainProgram-['antivirus']": ['notStart']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['storage'], 'maintainProgram': ['firewall', 'antivirus'], 'program': ['music'], 'os': ['windows']}
+            Actions: {"os-['linux']": ['notVisible']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"hardware-['processor']": ['failure']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['other'], 'maintainProgram': ['other', 'antivirus'], 'program': ['internet'], 'os': ['other', 'linux']}
+         Actions: {"os-['unix']": ['failure'], "hardware-['processor']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: {'maintainProgram': ['defragger'], 'program': ['game']}
+         Actions: {"hardware-['processor']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['storage'], 'maintainProgram': ['defragger', 'other'], 'program': ['game'], 'os': ['windows', 'unix']}
+            Actions: {"hardware-['processor']": ['noise', 'failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['processor'], 'maintainProgram': ['defragger'], 'program': ['game']}
+            Actions: {"program-['movie']": ['crashes'], "hardware-['processor']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'program': ['internet'], 'os': ['windows']}
+      Actions: {"os-['windows']": ['failure'], "maintainProgram-['firewall']": ['freezes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"os-['other']": ['power']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['storage'], 'maintainProgram': ['antivirus'], 'program': ['wordProcessor'], 'os': ['windows']}
+         Actions: {"maintainProgram-['defragger']": ['notStart'], "program-['other']": ['failsTask'], "os-['other']": ['power']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: None
+         Actions: {"os-['other']": ['power'], "program-['music']": ['crashes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: None
+      Actions: {"program-['music']": ['freezes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'program': ['other']}
+      Actions: {"os-['linux']": ['failure']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       general case
+         Attributes: {'hardware': ['ram'], 'maintainProgram': ['defragger'], 'program': ['internet'], 'os': ['other']}
+         Actions: {"os-['linux']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['processor', 'ram'], 'maintainProgram': ['defragger', 'firewall', 'antivirus'], 'program': ['internet'], 'os': ['mac', 'other', 'unix']}
+            Actions: {"os-['linux']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['removableStorage', 'ram', 'storage'], 'maintainProgram': ['other', 'defragger'], 'program': ['other', 'music', 'internet'], 'os': ['linux', 'other']}
+            Actions: {"os-['linux']": ['failure'], "hardware-['ram']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+       general case
+         Attributes: None
+         Actions: {"os-['linux']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: None
+            Actions: {"os-['linux']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['processor'], 'maintainProgram': ['antivirus'], 'program': ['other'], 'os': ['mac']}
+            Actions: {"os-['linux']": ['failure'], "hardware-['processor']": ['notStartup']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['defragger'], 'program': ['game', 'wordProcessor']}
+      Actions: {"maintainProgram-['defragger']": ['freezes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"os-['mac']": ['notStartup']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['processor', 'storage'], 'maintainProgram': ['other', 'antivirus'], 'program': ['movie', 'music', 'game'], 'os': ['windows', 'unix']}
+         Actions: {"os-['mac']": ['notStartup'], "program-['game']": ['notStart']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: None
+         Actions: {"os-['mac']": ['notStartup']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'program': ['game'], 'os': ['mac']}
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'hardware': ['ram'], 'maintainProgram': ['firewall'], 'program': ['other'], 'os': ['linux']}
+      Actions: {"program-['game']": ['freezes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       general case
+         Attributes: None
+         Actions: {"program-['game']": ['freezes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['other', 'ram'], 'maintainProgram': ['firewall'], 'program': ['game', 'other'], 'os': ['linux']}
+            Actions: {"maintainProgram-['defragger']": ['notStart'], "program-['game']": ['freezes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          general case
+            Attributes: {'os': ['windows']}
+            Actions: {"program-['game']": ['freezes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+             case
+               Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['firewall'], 'program': ['music'], 'os': ['windows']}
+               Actions: {"os-['unix']": ['other'], "program-['game']": ['freezes']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+             case
+               Attributes: {'hardware': ['processor'], 'maintainProgram': ['other'], 'program': ['internet'], 'os': ['windows']}
+               Actions: {"program-['game']": ['freezes']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+       general case
+         Attributes: None
+         Actions: {"program-['game']": ['freezes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: None
+            Actions: {"program-['game']": ['freezes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['storage', 'ram'], 'maintainProgram': ['defragger', 'firewall'], 'program': ['other', 'movie'], 'os': ['other', 'linux']}
+            Actions: {"program-['game']": ['freezes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage', 'storage'], 'maintainProgram': ['firewall'], 'program': ['movie', 'other'], 'os': ['other', 'linux']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'maintainProgram': ['firewall']}
+      Actions: {"hardware-['ram']": ['failure']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['firewall', 'defragger'], 'program': ['game', 'internet'], 'os': ['unix', 'other']}
+         Actions: {"hardware-['ram']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['storage'], 'maintainProgram': ['firewall'], 'program': ['wordProcessor'], 'os': ['mac']}
+         Actions: {"maintainProgram-['defragger']": ['failsTask'], "hardware-['ram']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"program-['movie']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['ram', 'other'], 'maintainProgram': ['firewall', 'defragger'], 'program': ['movie', 'internet'], 'os': ['windows']}
+         Actions: {"program-['movie']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'maintainProgram': ['antivirus'], 'program': ['game']}
+         Actions: {"program-['movie']": ['other'], "maintainProgram-['antivirus']": ['notSave']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage', 'ram', 'processor'], 'maintainProgram': ['antivirus', 'other'], 'program': ['wordProcessor', 'game', 'internet'], 'os': ['mac', 'windows']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'os': ['mac']}
+      Actions: {"maintainProgram-['firewall']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       general case
+         Attributes: {'maintainProgram': ['firewall'], 'program': ['wordProcessor'], 'os': ['mac']}
+         Actions: {"maintainProgram-['firewall']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['firewall'], 'program': ['wordProcessor'], 'os': ['mac']}
+            Actions: {"maintainProgram-['firewall']": ['other'], "hardware-['storage']": ['failure']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          general case
+            Attributes: {'program': ['wordProcessor'], 'os': ['mac']}
+            Actions: {"maintainProgram-['firewall']": ['other']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+             case
+               Attributes: {'hardware': ['other'], 'maintainProgram': ['defragger'], 'program': ['wordProcessor'], 'os': ['mac']}
+               Actions: {"maintainProgram-['firewall']": ['other']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+             case
+               Attributes: {'hardware': ['processor', 'storage'], 'maintainProgram': ['firewall', 'antivirus'], 'program': ['movie', 'music', 'wordProcessor'], 'os': ['mac', 'linux']}
+               Actions: {"maintainProgram-['firewall']": ['other'], "maintainProgram-['antivirus']": ['failsTask']}
+               Action Prescribe: Call someone to help
+               Actions Done: None
+       general case
+         Attributes: {'program': ['internet'], 'os': ['mac']}
+         Actions: {"maintainProgram-['firewall']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['other', 'processor'], 'maintainProgram': ['defragger'], 'program': ['internet', 'wordProcessor'], 'os': ['windows', 'mac']}
+            Actions: {"maintainProgram-['firewall']": ['other']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['ram'], 'maintainProgram': ['other'], 'program': ['internet'], 'os': ['mac']}
+            Actions: {"maintainProgram-['firewall']": ['other'], "program-['music']": ['other'], "os-['other']": ['noise']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"program-['internet']": ['notStart']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['other']}
+         Actions: {"program-['internet']": ['notStart'], "program-['music']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['processor', 'removableStorage'], 'maintainProgram': ['defragger', 'other'], 'program': ['wordProcessor', 'game'], 'os': ['mac', 'linux', 'other']}
+         Actions: {"program-['internet']": ['notStart'], "program-['wordProcessor']": ['failsTask']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['storage', 'ram'], 'maintainProgram': ['other', 'defragger', 'antivirus'], 'program': ['movie', 'wordProcessor', 'game'], 'os': ['windows']}
+      Actions: {"program-['game']": ['crashes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['processor'], 'maintainProgram': ['antivirus'], 'os': ['linux']}
+      Actions: {"hardware-['storage']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'os': ['other']}
+      Actions: {"program-['internet']": ['failsTask']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['other', 'storage'], 'maintainProgram': ['defragger'], 'program': ['game', 'music'], 'os': ['other', 'mac']}
+         Actions: {"program-['internet']": ['failsTask'], "maintainProgram-['other']": ['freezes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['processor', 'ram'], 'maintainProgram': ['other', 'antivirus'], 'program': ['internet', 'movie'], 'os': ['linux', 'other', 'windows']}
+         Actions: {"program-['internet']": ['failsTask'], "hardware-['ram']": ['notStartup']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['storage'], 'maintainProgram': ['other'], 'program': ['music'], 'os': ['unix']}
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'hardware': ['storage'], 'maintainProgram': ['antivirus'], 'program': ['other']}
+      Actions: {"program-['internet']": ['notSave']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['removableStorage', 'storage'], 'maintainProgram': ['antivirus', 'firewall'], 'program': ['wordProcessor', 'other'], 'os': ['windows', 'unix']}
+         Actions: {"program-['internet']": ['notSave', 'other'], "program-['game']": ['notSave']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['storage', 'processor'], 'maintainProgram': ['other', 'antivirus'], 'program': ['other', 'movie'], 'os': ['other']}
+         Actions: {"program-['internet']": ['notSave'], "hardware-['other']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'maintainProgram': ['other'], 'os': ['mac']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['ram', 'other'], 'maintainProgram': ['defragger'], 'program': ['wordProcessor', 'game'], 'os': ['mac', 'unix']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['other'], 'maintainProgram': ['firewall'], 'program': ['game', 'wordProcessor'], 'os': ['windows', 'unix']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'hardware': ['storage'], 'os': ['windows']}
+      Actions: {"program-['movie']": ['failsTask']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['storage'], 'maintainProgram': ['antivirus'], 'program': ['wordProcessor', 'internet'], 'os': ['mac', 'windows']}
+         Actions: {"program-['movie']": ['failsTask']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['storage'], 'maintainProgram': ['defragger'], 'os': ['windows']}
+         Actions: {"program-['movie']": ['failsTask']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    general case
+      Attributes: {'hardware': ['processor']}
+      Actions: {"hardware-['removableStorage']": ['noise']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['processor']}
+         Actions: {"hardware-['removableStorage']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: {'hardware': ['processor'], 'maintainProgram': ['other'], 'program': ['game']}
+         Actions: {"hardware-['removableStorage']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['processor'], 'maintainProgram': ['other'], 'program': ['game'], 'os': ['linux']}
+            Actions: {"maintainProgram-['defragger']": ['crashes'], "hardware-['removableStorage']": ['noise'], "os-['unix']": ['noise']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['processor', 'ram'], 'maintainProgram': ['antivirus', 'other'], 'program': ['wordProcessor', 'game'], 'os': ['windows']}
+            Actions: {"hardware-['removableStorage']": ['noise'], "maintainProgram-['antivirus']": ['freezes']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['ram'], 'program': ['music']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['processor', 'other'], 'maintainProgram': ['defragger', 'antivirus'], 'program': ['internet'], 'os': ['unix']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['processor'], 'maintainProgram': ['defragger'], 'program': ['internet'], 'os': ['unix']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['storage', 'ram', 'other'], 'maintainProgram': ['defragger', 'firewall'], 'program': ['movie', 'internet', 'wordProcessor'], 'os': ['linux']}
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"program-['other']": ['notSave']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: None
+         Actions: {"program-['other']": ['notSave'], "hardware-['other']": ['other'], "maintainProgram-['antivirus']": ['freezes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['removableStorage', 'other'], 'maintainProgram': ['other'], 'program': ['wordProcessor', 'other'], 'os': ['linux', 'windows']}
+         Actions: {"hardware-['removableStorage']": ['notStartup'], "program-['other']": ['notSave']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['other'], 'maintainProgram': ['antivirus'], 'program': ['movie', 'wordProcessor'], 'os': ['linux', 'unix']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"hardware-['storage']": ['noise']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['other'], 'program': ['game'], 'os': ['unix']}
+         Actions: {"hardware-['storage']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: None
+         Actions: {"hardware-['storage']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    general case
+      Attributes: {'hardware': ['other'], 'program': ['wordProcessor'], 'os': ['unix']}
+      Actions: {"os-['linux']": ['noise']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['storage', 'other'], 'maintainProgram': ['antivirus', 'other'], 'program': ['other', 'wordProcessor'], 'os': ['windows', 'unix']}
+         Actions: {"os-['linux']": ['noise'], "program-['wordProcessor']": ['notSave'], "program-['movie']": ['freezes']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: {'hardware': ['ram'], 'maintainProgram': ['defragger'], 'os': ['unix']}
+         Actions: {"os-['linux']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: {'hardware': ['ram'], 'maintainProgram': ['antivirus', 'defragger'], 'program': ['game', 'internet'], 'os': ['unix', 'other']}
+            Actions: {"os-['linux']": ['noise']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'hardware': ['ram', 'other'], 'maintainProgram': ['firewall', 'defragger'], 'program': ['movie', 'wordProcessor'], 'os': ['linux', 'mac', 'unix']}
+            Actions: {"os-['linux']": ['noise']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"hardware-['processor']": ['notStartup']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['ram'], 'maintainProgram': ['antivirus'], 'os': ['mac']}
+         Actions: {"hardware-['processor']": ['notStartup']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['storage', 'processor'], 'maintainProgram': ['firewall', 'defragger'], 'os': ['windows']}
+         Actions: {"hardware-['processor']": ['notStartup']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'maintainProgram': ['antivirus'], 'program': ['game'], 'os': ['linux']}
+      Actions: {"os-['linux']": ['power'], "maintainProgram-['other']": ['failsTask']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"os-['other']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['other'], 'maintainProgram': ['other'], 'program': ['movie'], 'os': ['unix']}
+         Actions: {"os-['windows']": ['notStartup'], "program-['other']": ['crashes'], "os-['other']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: None
+         Actions: {"program-['other']": ['notStart'], "os-['other']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['antivirus'], 'program': ['other'], 'os': ['linux']}
+      Actions: {"os-['other']": ['notStartup']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['firewall', 'other', 'antivirus'], 'program': ['wordProcessor', 'game'], 'os': ['windows']}
+      Actions: {"hardware-['removableStorage']": ['failure']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['storage'], 'maintainProgram': ['other', 'antivirus'], 'program': ['internet'], 'os': ['other', 'linux']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'program': ['internet'], 'os': ['other']}
+      Actions: {"os-['unix']": ['notStartup']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['processor', 'removableStorage'], 'maintainProgram': ['antivirus'], 'program': ['wordProcessor', 'internet', 'movie'], 'os': ['other', 'mac']}
+         Actions: {"os-['unix']": ['notStartup'], "hardware-['ram']": ['notStartup'], "program-['game']": ['notStart']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       general case
+         Attributes: None
+         Actions: {"os-['unix']": ['notStartup']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+          case
+            Attributes: None
+            Actions: {"os-['unix']": ['notStartup']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+          case
+            Attributes: {'maintainProgram': ['other', 'defragger'], 'program': ['internet'], 'os': ['other']}
+            Actions: {"os-['unix']": ['notStartup']}
+            Action Prescribe: Call someone to help
+            Actions Done: None
+    case
+      Attributes: {'hardware': ['processor'], 'maintainProgram': ['defragger'], 'program': ['wordProcessor'], 'os': ['windows']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['firewall', 'defragger'], 'program': ['music', 'other'], 'os': ['linux', 'mac']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['ram', 'removableStorage'], 'maintainProgram': ['defragger', 'other'], 'program': ['internet'], 'os': ['windows', 'linux', 'other']}
+      Actions: {}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['storage', 'ram'], 'maintainProgram': ['other'], 'program': ['music', 'internet'], 'os': ['unix', 'mac']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['ram', 'other'], 'maintainProgram': ['firewall', 'defragger'], 'program': ['movie'], 'os': ['mac', 'unix']}
+      Actions: {"os-['windows']": ['noise'], "hardware-['storage']": ['power']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'hardware': ['storage'], 'maintainProgram': ['defragger'], 'program': ['music'], 'os': ['windows']}
+      Actions: {"os-['mac']": ['notVisible']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['storage'], 'maintainProgram': ['defragger'], 'program': ['music'], 'os': ['windows']}
+         Actions: {"os-['mac']": ['notVisible'], "program-['movie']": ['freezes'], "program-['game']": ['other']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['removableStorage', 'other', 'storage'], 'maintainProgram': ['other', 'defragger'], 'program': ['other', 'movie', 'music'], 'os': ['mac', 'windows', 'unix']}
+         Actions: {"os-['mac']": ['notVisible']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['other', 'removableStorage'], 'maintainProgram': ['antivirus', 'firewall'], 'program': ['movie', 'game'], 'os': ['unix', 'linux', 'windows']}
+      Actions: {"maintainProgram-['firewall']": ['notStart'], "maintainProgram-['antivirus']": ['notSave']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['storage'], 'maintainProgram': ['other']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['processor', 'other'], 'maintainProgram': ['defragger'], 'program': ['wordProcessor', 'movie', 'game'], 'os': ['unix', 'windows']}
+      Actions: {"maintainProgram-['defragger']": ['other']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'maintainProgram': ['antivirus'], 'os': ['other']}
+      Actions: {"hardware-['storage']": ['failure']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['other'], 'maintainProgram': ['antivirus'], 'program': ['wordProcessor'], 'os': ['other']}
+         Actions: {"hardware-['storage']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['processor', 'removableStorage'], 'maintainProgram': ['antivirus', 'firewall'], 'program': ['movie', 'other'], 'os': ['other']}
+         Actions: {"hardware-['other']": ['failure'], "hardware-['storage']": ['failure']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['antivirus'], 'program': ['internet'], 'os': ['other']}
+      Actions: {"hardware-['processor']": ['notVisible', 'noise']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['ram', 'other'], 'maintainProgram': ['firewall', 'defragger'], 'program': ['game', 'movie'], 'os': ['linux', 'other']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'hardware': ['processor'], 'maintainProgram': ['other'], 'program': ['music'], 'os': ['mac']}
+      Actions: {"hardware-['other']": ['noise']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['other', 'ram', 'processor'], 'maintainProgram': ['antivirus', 'other'], 'program': ['internet', 'movie', 'music'], 'os': ['mac', 'unix', 'linux']}
+         Actions: {"maintainProgram-['firewall']": ['failsTask'], "hardware-['other']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['storage', 'processor'], 'maintainProgram': ['defragger', 'other'], 'program': ['other', 'music', 'game'], 'os': ['other', 'mac']}
+         Actions: {"hardware-['other']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['processor'], 'maintainProgram': ['defragger'], 'program': ['game'], 'os': ['windows']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: None
+      Actions: {"hardware-['ram']": ['notVisible']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['ram'], 'maintainProgram': ['other'], 'program': ['wordProcessor'], 'os': ['unix']}
+         Actions: {"maintainProgram-['defragger']": ['notStart'], "hardware-['ram']": ['notVisible']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: None
+         Actions: {"hardware-['ram']": ['notVisible']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['antivirus'], 'program': ['other'], 'os': ['linux']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage', 'processor'], 'maintainProgram': ['antivirus', 'defragger'], 'program': ['music'], 'os': ['unix', 'other', 'windows']}
+      Actions: {"program-['internet']": ['crashes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage'], 'maintainProgram': ['antivirus'], 'program': ['other', 'movie'], 'os': ['linux', 'unix']}
+      Actions: {"maintainProgram-['defragger']": ['notStart']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['ram', 'processor'], 'maintainProgram': ['defragger'], 'program': ['movie', 'other'], 'os': ['unix', 'windows']}
+      Actions: {"hardware-['ram']": ['power']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['storage', 'ram'], 'maintainProgram': ['firewall', 'antivirus', 'other'], 'program': ['wordProcessor'], 'os': ['unix', 'linux']}
+      Actions: {"program-['music']": ['crashes']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'maintainProgram': ['other'], 'program': ['other'], 'os': ['windows']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'maintainProgram': ['antivirus'], 'program': ['music'], 'os': ['linux']}
+      Actions: {"hardware-['ram']": ['noise']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['other', 'processor'], 'maintainProgram': ['antivirus', 'firewall'], 'program': ['internet', 'wordProcessor', 'music'], 'os': ['other', 'linux']}
+         Actions: {"os-['linux']": ['notVisible'], "hardware-['ram']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['ram'], 'maintainProgram': ['antivirus'], 'program': ['music'], 'os': ['linux']}
+         Actions: {"hardware-['ram']": ['noise']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+    case
+      Attributes: {'hardware': ['storage'], 'maintainProgram': ['firewall'], 'program': ['internet']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    case
+      Attributes: {'hardware': ['removableStorage', 'storage'], 'maintainProgram': ['defragger', 'antivirus'], 'program': ['other', 'wordProcessor', 'game'], 'os': ['linux', 'mac']}
+      Actions: None
+      Action Prescribe: Call someone to help
+      Actions Done: None
+    general case
+      Attributes: {'hardware': ['storage'], 'maintainProgram': ['other'], 'os': ['other']}
+      Actions: {"maintainProgram-['defragger']": ['notSave'], "program-['wordProcessor']": ['failsTask']}
+      Action Prescribe: Call someone to help
+      Actions Done: None
+       case
+         Attributes: {'hardware': ['ram', 'removableStorage', 'storage'], 'maintainProgram': ['antivirus', 'other', 'firewall'], 'program': ['internet', 'movie', 'music'], 'os': ['linux', 'mac', 'other']}
+         Actions: {"maintainProgram-['defragger']": ['notSave'], "program-['wordProcessor']": ['failsTask']}
+         Action Prescribe: Call someone to help
+         Actions Done: None
+       case
+         Attributes: {'hardware': ['other', 'storage'], 'maintainProgram': ['other', 'defragger'], 'program': ['wordProcessor'], 'os': ['other']}
+         Actions: {"maintainProgram-['defragger']": ['notSave'], "program-['wordProcessor']": ['failsTask']}
+         Action Prescribe: Call someone to help
+         Actions Done: None

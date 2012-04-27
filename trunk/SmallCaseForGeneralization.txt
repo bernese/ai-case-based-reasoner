@@ -1,0 +1,66 @@
+ general case
+   Attributes: None
+   Actions: None
+   Action Prescribe: None
+   Actions Done: None
+   Trust Value: 1
+    case
+      Attributes: {'hardware': ['harddrive'], 'os': ['windows']}
+      Actions: {'hardware-harddrive': ['noise'], 'os-windows': ['crashes']}
+      Action Prescribe: The hard drive is probably going out
+      Actions Done: None
+      Trust Value: 1
+    general case
+      Attributes: None
+      Actions: {'os-windows': ['crashes']}
+      Action Prescribe: Find the crash code, or lack of, and search for a solution online
+      Actions Done: None
+      Trust Value: 1
+       case
+         Attributes: None
+         Actions: {'os-windows': ['crashes']}
+         Action Prescribe: Find the crash code, or lack of, and search for a solution online
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['windows']}
+         Actions: {'os-windows': ['crashes']}
+         Action Prescribe: Find the crash code, or lack of, and search for a solution online
+         Actions Done: None
+         Trust Value: 1
+    case
+      Attributes: None
+      Actions: {'program-firefox': ['fails']}
+      Action Prescribe: None
+      Actions Done: None
+      Trust Value: 1
+    general case
+      Attributes: {'os': ['linux']}
+      Actions: {'os-linux': ['crashes']}
+      Action Prescribe: None
+      Actions Done: None
+      Trust Value: 1
+       case
+         Attributes: {'os': ['linux']}
+         Actions: {'os-linux': ['crashes']}
+         Action Prescribe: Find the crash code, or lack of, and search for a solution online
+         Actions Done: None
+         Trust Value: 1
+       general case
+         Attributes: {'os': ['linux']}
+         Actions: {'program-firefox': ['fails'], 'os-linux': ['crashes']}
+         Action Prescribe: None
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'os': ['linux']}
+            Actions: {'program-firefox': ['fails'], 'os-linux': ['crashes', 'fails']}
+            Action Prescribe: None
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'os': ['linux']}
+            Actions: {'program-firefox': ['fails'], 'os-linux': ['crashes']}
+            Action Prescribe: None
+            Actions Done: None
+            Trust Value: 1
