@@ -1,0 +1,643 @@
+Original tree
+    general case
+      Attributes: None
+      Actions: None
+      Action Prescribe: None
+      Actions Done: None
+      Trust Value: 1
+       case
+         Attributes: {'os': ['linux']}
+         Actions: {'os-linux': ['slow']}
+         Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['linux']}
+         Actions: {'os-linux': ['notStart']}
+         Action Prescribe: Try use your OS installation to either recover, or reinstall and use data from backup.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['linux']}
+         Actions: {'os-linux': ['fails']}
+         Action Prescribe: It it can be started again, backup all the data. Else, try and recover the OS.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['unix']}
+         Actions: {'os-unix': ['slow']}
+         Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['unix']}
+         Actions: {'os-unix': ['notStart']}
+         Action Prescribe: Try use your OS installation to either recover, or reinstall and use data from backup.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['unix']}
+         Actions: {'os-unix': ['fails']}
+         Action Prescribe: It it can be started again, backup all the data. Else, try and recover the OS.
+         Actions Done: None
+         Trust Value: 1
+       general case
+         Attributes: {'program': ['internet']}
+         Actions: {'program-internet': ['slow']}
+         Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider.
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['unix']}
+            Actions: {'program-internet': ['slow']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['linux']}
+            Actions: {'program-internet': ['slow']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['windows']}
+            Actions: {'program-internet': ['slow']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['mac']}
+            Actions: {'program-internet': ['slow']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['other']}
+            Actions: {'program-internet': ['slow']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider.
+            Actions Done: None
+            Trust Value: 1
+       general case
+         Attributes: {'program': ['internet']}
+         Actions: {'program-internet': ['fails']}
+         Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider. Might want to try a different browser.
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['unix']}
+            Actions: {'program-internet': ['fails']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider. Might want to try a different browser.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['linux']}
+            Actions: {'program-internet': ['fails']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider. Might want to try a different browser.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['windows']}
+            Actions: {'program-internet': ['fails']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider. Might want to try a different browser.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['mac']}
+            Actions: {'program-internet': ['fails']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider. Might want to try a different browser.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['other']}
+            Actions: {'program-internet': ['fails']}
+            Action Prescribe: Use anti-virus, remove all toolbars, and run a internet speed test. If the internet speed is nothing or low then talk to your service provider. Might want to try a different browser.
+            Actions Done: None
+            Trust Value: 1
+       general case
+         Attributes: {'program': ['internet']}
+         Actions: {'program-internet': ['notStart']}
+         Action Prescribe: If you can try an alternative browser, use the alternative browser. If that doesn't fix it, use other assistance.
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['unix']}
+            Actions: {'program-internet': ['notStart']}
+            Action Prescribe: If you can try an alternative browser, use the alternative browser. If that doesn't fix it, use other assistance.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['linux']}
+            Actions: {'program-internet': ['notStart']}
+            Action Prescribe: If you can try an alternative browser, use the alternative browser. If that doesn't fix it, use other assistance.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['windows']}
+            Actions: {'program-internet': ['notStart']}
+            Action Prescribe: If you can try an alternative browser, use the alternative browser. If that doesn't fix it, use other assistance.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['mac']}
+            Actions: {'program-internet': ['notStart']}
+            Action Prescribe: If you can try an alternative browser, use the alternative browser. If that doesn't fix it, use other assistance.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'program': ['internet'], 'os': ['other']}
+            Actions: {'program-internet': ['notStart']}
+            Action Prescribe: If you can try an alternative browser, use the alternative browser. If that doesn't fix it, use other assistance.
+            Actions Done: None
+            Trust Value: 1
+       general case
+         Attributes: {'hardware': ['harddrive']}
+         Actions: {'hardware-harddrive': ['noise']}
+         Action Prescribe: May want to backup and look for a new harddrive.
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['unix']}
+            Actions: {'hardware-harddrive': ['noise']}
+            Action Prescribe: May want to backup and look for a new harddrive.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['linux']}
+            Actions: {'hardware-harddrive': ['noise']}
+            Action Prescribe: May want to backup and look for a new harddrive.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['windows']}
+            Actions: {'hardware-harddrive': ['noise']}
+            Action Prescribe: May want to backup and look for a new harddrive.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['mac']}
+            Actions: {'hardware-harddrive': ['noise']}
+            Action Prescribe: May want to backup and look for a new harddrive.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['other']}
+            Actions: {'hardware-harddrive': ['noise']}
+            Action Prescribe: May want to backup and look for a new harddrive.
+            Actions Done: None
+            Trust Value: 1
+       general case
+         Attributes: {'hardware': ['harddrive']}
+         Actions: {'hardware-harddrive': ['notVisible']}
+         Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['unix']}
+            Actions: {'hardware-harddrive': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['linux']}
+            Actions: {'hardware-harddrive': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['windows']}
+            Actions: {'hardware-harddrive': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['mac']}
+            Actions: {'hardware-harddrive': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['harddrive'], 'os': ['other']}
+            Actions: {'hardware-harddrive': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+       general case
+         Attributes: {'hardware': ['removableStorage']}
+         Actions: {'hardware-removableStorage': ['noise']}
+         Action Prescribe: May want to backup and look for a new removableStorage.
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['unix']}
+            Actions: {'hardware-removableStorage': ['noise']}
+            Action Prescribe: May want to backup and look for a new removableStorage.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['linux']}
+            Actions: {'hardware-removableStorage': ['noise']}
+            Action Prescribe: May want to backup and look for a new removableStorage.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['windows']}
+            Actions: {'hardware-removableStorage': ['noise']}
+            Action Prescribe: May want to backup and look for a new removableStorage.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['mac']}
+            Actions: {'hardware-removableStorage': ['noise']}
+            Action Prescribe: May want to backup and look for a new removableStorage.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['other']}
+            Actions: {'hardware-removableStorage': ['noise']}
+            Action Prescribe: May want to backup and look for a new removableStorage.
+            Actions Done: None
+            Trust Value: 1
+       general case
+         Attributes: {'hardware': ['removableStorage']}
+         Actions: {'hardware-removableStorage': ['notVisible']}
+         Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['unix']}
+            Actions: {'hardware-removableStorage': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['linux']}
+            Actions: {'hardware-removableStorage': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['windows']}
+            Actions: {'hardware-removableStorage': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['mac']}
+            Actions: {'hardware-removableStorage': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['removableStorage'], 'os': ['other']}
+            Actions: {'hardware-removableStorage': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+       general case
+         Attributes: {'hardware': ['cd']}
+         Actions: {'hardware-cd': ['noise']}
+         Action Prescribe: May want to backup and look for a new cd.
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['unix']}
+            Actions: {'hardware-cd': ['noise']}
+            Action Prescribe: May want to backup and look for a new cd.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['linux']}
+            Actions: {'hardware-cd': ['noise']}
+            Action Prescribe: May want to backup and look for a new cd.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['windows']}
+            Actions: {'hardware-cd': ['noise']}
+            Action Prescribe: May want to backup and look for a new cd.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['mac']}
+            Actions: {'hardware-cd': ['noise']}
+            Action Prescribe: May want to backup and look for a new cd.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['other']}
+            Actions: {'hardware-cd': ['noise']}
+            Action Prescribe: May want to backup and look for a new cd.
+            Actions Done: None
+            Trust Value: 1
+       general case
+         Attributes: {'hardware': ['cd']}
+         Actions: {'hardware-cd': ['notVisible']}
+         Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+         Actions Done: None
+         Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['unix']}
+            Actions: {'hardware-cd': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['linux']}
+            Actions: {'hardware-cd': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['windows']}
+            Actions: {'hardware-cd': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['mac']}
+            Actions: {'hardware-cd': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+          case
+            Attributes: {'hardware': ['cd'], 'os': ['other']}
+            Actions: {'hardware-cd': ['notVisible']}
+            Action Prescribe: Try blowing the dust out of the connectors to the device and same cable to its other side.
+            Actions Done: None
+            Trust Value: 1
+       case
+         Attributes: {'os': ['windows']}
+         Actions: {'os-windows': ['slow']}
+         Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['windows']}
+         Actions: {'os-windows': ['notStart']}
+         Action Prescribe: Try use your OS installation to either recover, or reinstall and use data from backup.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['windows']}
+         Actions: {'os-windows': ['fails']}
+         Action Prescribe: It it can be started again, backup all the data. Else, try and recover the OS.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['mac']}
+         Actions: {'os-mac': ['slow']}
+         Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['mac']}
+         Actions: {'os-mac': ['notStart']}
+         Action Prescribe: Try use your OS installation to either recover, or reinstall and use data from backup.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['mac']}
+         Actions: {'os-mac': ['fails']}
+         Action Prescribe: It it can be started again, backup all the data. Else, try and recover the OS.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['other']}
+         Actions: {'os-other': ['slow']}
+         Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['other']}
+         Actions: {'os-other': ['notStart']}
+         Action Prescribe: Try use your OS installation to either recover, or reinstall and use data from backup.
+         Actions Done: None
+         Trust Value: 1
+       case
+         Attributes: {'os': ['other']}
+         Actions: {'os-other': ['fails']}
+         Action Prescribe: It it can be started again, backup all the data. Else, try and recover the OS.
+         Actions Done: None
+         Trust Value: 1
+Trust value should be 0.0000000001 for adaptation case
+   Original Case: 
+        case
+          Attributes: {'os': ['other']}
+          Actions: {'program-movie': ['crashes']}
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['other']}
+          Actions: {'os-other': ['slow']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: -9.0
+   Missing:
+        case
+          Attributes: None
+          Actions: ['os-other_slow']
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: ['program-movie_crashes']
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: {'os': ['other']}
+          Actions: {'program-movie': ['crashes']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1e-10
+This should be interesting, searching for testCase A again, should be slightly smaller than .0000000001 or same
+   Original Case: 
+        case
+          Attributes: {'os': ['other']}
+          Actions: {'program-movie': ['crashes']}
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['other']}
+          Actions: {'program-movie': ['crashes']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1e-10
+   Best Fit Case Score: 5.1e-09
+   Missing:
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: {'os': ['other']}
+          Actions: {'program-movie': ['crashes']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1e-10
+Trust value should be around .90 for adaptation case
+   Original Case: 
+        case
+          Attributes: {'hardware': ['harddrive'], 'os': ['linux']}
+          Actions: {'hardware-harddrive': ['fails', 'noise']}
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'hardware': ['harddrive'], 'os': ['linux']}
+          Actions: {'hardware-harddrive': ['noise']}
+          Action Prescribe: May want to backup and look for a new harddrive.
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: 47.0
+   Missing:
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: May want to backup and look for a new harddrive.
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: ['hardware-harddrive_fails']
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: {'hardware': ['harddrive'], 'os': ['linux']}
+          Actions: {'hardware-harddrive': ['fails', 'noise']}
+          Action Prescribe: May want to backup and look for a new harddrive.
+          Actions Done: None
+          Trust Value: 0.933565478902
+Trust value should be around .95
+   Original Case: 
+        case
+          Attributes: {'os': ['windows']}
+          Actions: {'os-windows': ['slow']}
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['windows']}
+          Actions: {'os-windows': ['slow']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: 51.0
+   Missing:
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: {'os': ['windows']}
+          Actions: {'os-windows': ['slow']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 0.950212931632
+This is the case with just an atrribute, which should be less than 10%
+   Original Case: 
+        case
+          Attributes: {'os': ['windows']}
+          Actions: None
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['windows']}
+          Actions: {'os-windows': ['slow']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: 1.0
+   Missing:
+        case
+          Attributes: None
+          Actions: {'os-windows': ['slow']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: {'os': ['windows']}
+          Actions: None
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 0.0571268561451
+This is the case of nothing, should be .0000000001
+   Original Case: 
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['linux']}
+          Actions: {'os-linux': ['slow']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: 0
+   Missing:
+        case
+          Attributes: {'os': ['linux']}
+          Actions: {'os-linux': ['slow']}
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: Run the anti-virus, anti-spyware, and defragmenter on the system.
+          Actions Done: None
+          Trust Value: 1e-10

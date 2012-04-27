@@ -1,0 +1,6 @@
+The similarity between a and b is 56 and should be 56
+The similarity between a and c is 0 and should be 0
+The similarity between b and a is 56 and should be 56
+The similarity between b and b is 107 and should be 107
+The similarty between a and d is 0 and should be 0
+The similarity between a and e is 50 and should be 50

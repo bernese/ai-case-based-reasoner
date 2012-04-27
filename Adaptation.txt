@@ -1,0 +1,185 @@
+Adaptation:
+   Original Case: 
+        case
+          Attributes: None
+          Actions: {'program-firefox': ['fails']}
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['linux']}
+          Actions: {'os-linux': ['crashes']}
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: -2
+   Missing:
+        case
+          Attributes: {'os': ['linux']}
+          Actions: ['os-linux_crashes']
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: ['program-firefox_fails']
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: case Attributes: None || Actions: {'program-firefox': ['fails']} || Action Prescribe: None || Actions Done: None
+          Actions: None
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 0.0
+Adaptation:
+   Original Case: 
+        case
+          Attributes: {'os': ['linux']}
+          Actions: {'program-firefox': ['fails'], 'os-linux': ['crashes']}
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['linux']}
+          Actions: {'os-linux': ['crashes']}
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: 50
+   Missing:
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: ['program-firefox_fails']
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: case Attributes: {'os': ['linux']} || Actions: {'program-firefox': ['fails'], 'os-linux': ['crashes']} || Action Prescribe: None || Actions Done: None
+          Actions: None
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 0.632120558829
+Adaptation:
+   Original Case: 
+        case
+          Attributes: {'os': ['linux']}
+          Actions: {'program-firefox': ['fails'], 'os-linux': ['crashes', 'fails']}
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['linux']}
+          Actions: {'os-linux': ['crashes']}
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: 49
+   Missing:
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: ['program-firefox_fails', 'os-linux_fails']
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: case Attributes: {'os': ['linux']} || Actions: {'program-firefox': ['fails'], 'os-linux': ['crashes', 'fails']} || Action Prescribe: None || Actions Done: None
+          Actions: None
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 0.632120558829
+Adaptation:
+   Original Case: 
+        case
+          Attributes: None
+          Actions: {'program-firefox': ['fails']}
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['linux']}
+          Actions: {'os-linux': ['crashes']}
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: -2
+   Missing:
+        case
+          Attributes: {'os': ['linux']}
+          Actions: ['os-linux_crashes']
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: ['program-firefox_fails']
+          Action Prescribe: None
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: case Attributes: None || Actions: {'program-firefox': ['fails']} || Action Prescribe: None || Actions Done: None
+          Actions: None
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 0.0
+Adaptation:
+   Original Case: 
+        case
+          Attributes: {'os': ['windows']}
+          Actions: {'os-windows': ['crashes']}
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case: 
+        case
+          Attributes: {'os': ['windows']}
+          Actions: {'os-windows': ['crashes']}
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 1
+   Best Fit Case Score: 51
+   Missing:
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: 
+          Actions Done: None
+          Trust Value: 1
+   Extra
+        case
+          Attributes: None
+          Actions: None
+          Action Prescribe: 
+          Actions Done: None
+          Trust Value: 1
+   New Adaptation Case: 
+        case
+          Attributes: case Attributes: {'os': ['windows']} || Actions: {'os-windows': ['crashes']} || Action Prescribe: Find the crash code, or lack of, and search for a solution online || Actions Done: None
+          Actions: None
+          Action Prescribe: Find the crash code, or lack of, and search for a solution online
+          Actions Done: None
+          Trust Value: 0.864664716763
